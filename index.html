@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Dinámico</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Menú Dinámico</h1>
+        <div id="menu"></div>
+        
+        <h2>Agregar Opción</h2>
+        <form id="addMenuItemForm">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="text" id="enlace" placeholder="Enlace" required>
+            <button type="submit">Agregar</button>
+        </form>
+
+        <h2>Modificar Opción</h2>
+        <form id="editMenuItemForm">
+            <select id="editSelect" required></select>
+            <input type="text" id="editNombre" placeholder="Nuevo Nombre" required>
+            <input type="text" id="editEnlace" placeholder="Nuevo Enlace" required>
+            <button type="submit">Modificar</button>
+        </form>
+
+        <h2>Eliminar Opción</h2>
+        <form id="deleteMenuItemForm">
+            <select id="deleteSelect" required></select>
+            <button type="submit">Eliminar</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
