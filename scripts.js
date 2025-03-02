@@ -22,7 +22,7 @@ function renderMenu() {
         const button = document.createElement('button');
         button.textContent = item.nombre;
         button.onclick = () => {
-            window.location.href = item.enlace; // Redirigir al enlace
+            window.location.href = item.enlace; 
         };
 
         itemDiv.appendChild(button);
